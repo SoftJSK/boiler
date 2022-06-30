@@ -4,7 +4,7 @@
 #include "main.h"
 
 int main(int argc, char *argv[]) {
-    langName = argv[0];
+    langName = argv[1];
     if (argc == 2) {
         generate(langName);
     } else {

@@ -4,17 +4,23 @@
 #include <string>
 
 void generate(char *lang) {
-    std::string tpath;
-    std::string langNameStr;
-    langNameStr = std::string(langName);
-    tpath = "~/.boiler/template/";
+    std::cout << lang;
+    std::string cmd;
+    std::string tpath = "~/.boiler/template/";
+    std::string langNameStr = std::string(lang);
     if (langNameStr == "c") {
-        system(("cp " + tpath + "main.c main.c").c_str());
-    } else if (langNameStr == "cpp") {
-        system(("cp " + tpath + "main.cpp main.cpp").c_str());
-    } else if (langNameStr == "python") {
-        system(("cp " + tpath + "main.py main.py").c_str());  
+        std::cout << cmd << std::endl;
+        std::string cmd = "cp " + tpath + "main.c main.c";
+        system((cmd).c_str());
+    } else if (langNameStr == "cpp" || langNameStr == "c++") {
+        std::cout << cmd << std::endl;
+        std::string cmd = "cp " + tpath + "main.cpp main.cpp";
+        system((cmd).c_str());
+    } else if (langNameStr == "python" || langNameStr == "py") {
+        std::cout << cmd << std::endl;
+        std::string cmd = "cp " + tpath + "main.py main.py";
+        system((cmd).c_str()); 
     } else {
-        std::cout << "Unknown language.";
+        std::cout << "Unknown language.\n";
     }
 }
