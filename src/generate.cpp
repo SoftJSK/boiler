@@ -4,8 +4,10 @@
 #include <string>
 
 void generate(char *lang) {
-    std::string tpath = "~/.boiler/template/";
-    std::string langNameStr = std::string(langName);
+    std::string tpath;
+    std::string langNameStr;
+    langNameStr = std::string(langName);
+    tpath = "~/.boiler/template/";
     if (langNameStr == "c") {
         system(("cp " + tpath + "main.c main.c").c_str());
     } else if (langNameStr == "cpp") {
