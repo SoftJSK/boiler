@@ -1,4 +1,4 @@
 [<EntryPoint>]
 let main argv = 
-    printfn "Hello, World!"
+    printfn "Hello World!"
     0 
