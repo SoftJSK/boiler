@@ -83,6 +83,24 @@ void generate(char *lang) {
     } else if (langNameStr == "swift") {
         std::string cmd = "cp " + tpath + "main.swift main.swift";
         system((cmd).c_str());
+    } else if (langNameStr == "fortran" || langNameStr == "f90") {
+        std::string cmd = "cp " + tpath + "main.f90 main.f90";
+        system((cmd).c_str());
+    } else if (langNameStr == "kotlin" || langNameStr == "kt") {
+        std::string cmd = "cp " + tpath + "main.kt main.kt";
+        system((cmd).c_str());
+    } else if (langNameStr == "typescript" || langNameStr == "ts") {
+        std::string cmd = "cp " + tpath + "main.ts main.ts";
+        system((cmd).c_str());
+    } else if (langNameStr == "julia" || langNameStr == "jl") {
+        std::string cmd = "cp " + tpath + "main.jl main.jl";
+        system((cmd).c_str());
+    } else if (langNameStr == "r") {
+        std::string cmd = "cp " + tpath + "main.r main.r";
+        system((cmd).c_str());
+    } else if (langNameStr == "scala") {
+        std::string cmd = "cp " + tpath + "main.scala main.scala";
+        system((cmd).c_str());
     } else {
         std::cout << "Unknown language.\nSyntax: \nboiler *programming language name* -- generates boilerplate in current directory (programming language name must be lowercase)\nboiler *anything else* -- bring up this menu\nTip: You can use programming language file extensions instead of names for quicker use.\n";
         // tried to make this not a one-line command, didn't work for some reason
