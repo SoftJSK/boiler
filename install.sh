@@ -1,5 +1,6 @@
-echo Installing boiler...
-mkdir -p /usr/share/boiler/boilerplates/
-sudo cp /boilerplates/ /usr/share/boiler/boilerplates/
-sudo cp LICENSE /usr/share/boiler/LICENSE
-sudo cp boiler /usr/bin/boiler
+sudo mkdir /usr/share/boiler/
+sudo mkdir /usr/share/boiler/template/
+sudo cp boilerplates/* /usr/share/boiler/template/
+g++ -o boiler src/generate.cpp src/main.cpp
+sudo cp boiler /usr/bin/
+rm boiler

@@ -5,13 +5,13 @@
 
 void generate(char *lang) {
     std::string cmd;
-    std::string tpath = "/usr/share/boiler/boilerplates/";
+    std::string tpath = "/usr/share/boiler/template/";
     std::string langNameStr = std::string(lang);
     // this is one of the contenders for the worst code i ever wrote
     if (langNameStr == "c") {
         std::string cmd = "cp " + tpath + "main.c main.c";
         system((cmd).c_str());
-    } else if (langNameStr == "cpp" || langNameStr == "c++" || langNameStr == "cplusplus") {
+    } else if (langNameStr == "cpp" || langNameStr == "c++") {
         std::string cmd = "cp " + tpath + "main.cpp main.cpp";
         system((cmd).c_str());
     } else if (langNameStr == "python" || langNameStr == "py") {
@@ -23,10 +23,10 @@ void generate(char *lang) {
     } else if (langNameStr == "clojure" || langNameStr == "clj") {
         std::string cmd = "cp " + tpath + "main.clj main.clj";
         system((cmd).c_str()); 
-    } else if (langNameStr == "c#" || langNameStr == "charp" || langNameStr == "cs") {
+    } else if (langNameStr == "c#" || langNameStr == "csharp" || langNameStr == "cs") {
         std::string cmd = "cp " + tpath + "main.cs main.cs";
         system((cmd).c_str()); 
-    } else if (langNameStr == "cascadingstylesheet" || langNameStr == "css" || langNameStr == "css3") {
+    } else if (langNameStr == "css" || langNameStr == "css3") {
         std::string cmd = "cp " + tpath + "main.css main.css";
         system((cmd).c_str()); 
     } else if (langNameStr == "dlang" || langNameStr == "d") {
@@ -44,13 +44,13 @@ void generate(char *lang) {
     } else if (langNameStr == "h" || langNameStr == "header") {
         std::string cmd = "cp " + tpath + "main.h main.h";
         system((cmd).c_str());
-    } else if (langNameStr == "html" || langNameStr == "hypertextmarkuplanguage" || langNameStr == "html5") {
+    } else if (langNameStr == "html" || langNameStr == "html5") {
         std::string cmd = "cp " + tpath + "main.html main.html";
         system((cmd).c_str());
     } else if (langNameStr == "java") {
         std::string cmd = "cp " + tpath + "main.java main.java";
         system((cmd).c_str());
-    } else if (langNameStr == "js" || langNameStr == "javascript" || langNameStr == "ecmascript") {
+    } else if (langNameStr == "js" || langNameStr == "javascript") {
         std::string cmd = "cp " + tpath + "main.js main.js";
         system((cmd).c_str());
     } else if (langNameStr == "lua") {
@@ -62,7 +62,7 @@ void generate(char *lang) {
     } else if (langNameStr == "md" || langNameStr == "markdown") {
         std::string cmd = "cp " + tpath + "main.md main.md";
         system((cmd).c_str());
-    } else if (langNameStr == "php" || langNameStr == "personalhomepage") {
+    } else if (langNameStr == "php") {
         std::string cmd = "cp " + tpath + "main.php main.php";
         system((cmd).c_str());
     } else if (langNameStr == "pl" || langNameStr == "perl") {
