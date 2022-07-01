@@ -49,4 +49,16 @@ boiler sh
 rm main.sh
 boiler swift
 rm main.swift
+boiler r
+rm main.r
+boiler f90
+rm main.f90
+boiler scala
+rm main.scala
+boiler kt
+rm main.kt
+boiler ts
+rm main.ts
+boiler jl
+rm main.jl
 echo Test done. If there are no errors, the test passed.
